@@ -3,15 +3,15 @@ const updateSc = document.getElementById("updateScore").onclick = ((e) => {
 
     const userId = document.getElementById("userId").value;
     const att = document.getElementById("att").value;
-    const attNum = parseInt(att);
+    const attNum = Number(att);
     const test = document.getElementById("test").value;
-    const testNum = parseInt(test);
+    const testNum = Number(test);
     const ssatt = document.getElementById("ssatt").value;
-    const ssattNum = parseInt(ssatt);
+    const ssattNum = Number(ssatt);
     const ssproj = document.getElementById("ssproj").value;
-    const ssprojNum = parseInt(ssproj);
+    const ssprojNum = Number(ssproj);
     const finalproj = document.getElementById("finalproj").value;
-    const finalprojNum = parseInt(finalproj);
+    const finalprojNum = Number(finalproj);
 
     var docRef = db.collection('students').doc(userId);
 

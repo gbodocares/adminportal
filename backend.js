@@ -1,8 +1,4 @@
 
-// originalString.slice(0, 3)
-
-// let cutWord = studentId.slice(0, 3);
-
 const loginBtn = document.getElementById("toggleForm").onclick = ((e) => {
    var showForm = document.getElementById('update');
    showForm.style.display = 'block';

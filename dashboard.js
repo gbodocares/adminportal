@@ -1,16 +1,15 @@
 
 
-db.collection("students").where('userId', '!=', '')
-    .onSnapshot((querySnapshot) => {
-       
-        querySnapshot.forEach((doc) => {
-            console.log(doc.data());
-            var noOfStudents = doc.data();
-            var number = Object.keys(noOfStudents).length;
-       
-            document.getElementById('allstudents').innerHTML = Math.round(number * 4.53);
-        });
+db.collection("students").get().then((querySnapshot) => {
+    var Users = [];
+    querySnapshot.forEach((doc) => {
+        // doc.data() is never undefined for query doc snapshots
+        console.log(doc.id, " => ", doc.data());
+        Users.push(doc.data());
+        var docLen = Users.push(doc.data());
+        document.getElementById('allstudents').innerHTML = docLen / 2;
     });
+});
 
 
 

@@ -20,6 +20,7 @@ db.collection("students").where("dept", "==", "web design")
         console.log(Users)
         var count = 1;
         var classData = Users.map((data) => {
+            
         console.log(typeof(Users))
             return `<div>
             
