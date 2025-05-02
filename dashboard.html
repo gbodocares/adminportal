@@ -140,10 +140,7 @@
                     <a class="nav-link" href="backend.html">Backend Development</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="videography.html">Videography</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="photography.html">Photography</a>
+                    <a class="nav-link" href="videography.html">Videography & Photography</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="editing.html">Video Editing</a>
@@ -240,53 +237,12 @@
                   <div class="card-body">
                     <h4 class="card-title text-dark">Todo List</h4>
                     <div class="add-items d-flex">
-                      <input type="text" class="form-control todo-list-input" placeholder="What do you need to do today?">
-                      <button class="add btn btn-gradient-primary font-weight-bold todo-list-add-btn" id="add-task">Add</button>
+                      <input type="text" id="todo" class="form-control todo-list-input" placeholder="What do you need to do today?">
+                      <button class="add btn btn-gradient-primary font-weight-bold todo-list-add-btn" id="addTodo">Add</button>
                     </div>
                     <div class="list-wrapper">
-                      <ul class="d-flex flex-column-reverse todo-list todo-list-custom">
-                        <li>
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input class="checkbox" type="checkbox"> Meeting with Alisa </label>
-                          </div>
-                          <i class="remove mdi mdi-close-circle-outline"></i>
-                        </li>
-                        <li class="completed">
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input class="checkbox" type="checkbox" checked> Call John </label>
-                          </div>
-                          <i class="remove mdi mdi-close-circle-outline"></i>
-                        </li>
-                        <li>
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input class="checkbox" type="checkbox"> Create invoice </label>
-                          </div>
-                          <i class="remove mdi mdi-close-circle-outline"></i>
-                        </li>
-                        <li>
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input class="checkbox" type="checkbox"> Print Statements </label>
-                          </div>
-                          <i class="remove mdi mdi-close-circle-outline"></i>
-                        </li>
-                        <li class="completed">
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input class="checkbox" type="checkbox" checked> Prepare for presentation </label>
-                          </div>
-                          <i class="remove mdi mdi-close-circle-outline"></i>
-                        </li>
-                        <li>
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input class="checkbox" type="checkbox"> Pick up kids from school </label>
-                          </div>
-                          <i class="remove mdi mdi-close-circle-outline"></i>
-                        </li>
+                      <ul class="d-flex flex-column-reverse todo-list todo-list-custom" id="todoResult">
+                        
                       </ul>
                     </div>
                   </div>
@@ -336,5 +292,7 @@
 
     <script src="config.js"></script>
     <script src="dashboard.js"></script>
+    <script src="todo.js"></script>
+    <script src="todolist.js"></script>
   </body>
 </html>

@@ -9,7 +9,7 @@ const loginBtn = document.getElementById("toggleForm").onclick = ((e) => {
      
 });
 
-db.collection("students").where("dept", "==", "videography")
+db.collection("students").where("dept", "==", "videography & photography")
     .get()
     .then((querySnapshot) => {
     var Users = [];
